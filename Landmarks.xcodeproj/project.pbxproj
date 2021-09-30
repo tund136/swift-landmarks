@@ -18,6 +18,7 @@
 		ADC871AB2705A12B00DDE7D6 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC871AA2705A12B00DDE7D6 /* ModelData.swift */; };
 		ADC871AD2705A67100DDE7D6 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC871AC2705A67100DDE7D6 /* LandmarkRow.swift */; };
 		ADC871AF2705A7D800DDE7D6 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC871AE2705A7D800DDE7D6 /* LandmarkList.swift */; };
+		ADC871B12705ACD600DDE7D6 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC871B02705ACD600DDE7D6 /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		ADC871AA2705A12B00DDE7D6 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		ADC871AC2705A67100DDE7D6 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		ADC871AE2705A7D800DDE7D6 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		ADC871B02705ACD600DDE7D6 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				ADC871AC2705A67100DDE7D6 /* LandmarkRow.swift */,
 				ADC871AE2705A7D800DDE7D6 /* LandmarkList.swift */,
+				ADC871B02705ACD600DDE7D6 /* LandmarkDetail.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				ADC871A727059A4B00DDE7D6 /* MapView.swift in Sources */,
 				ADC871902705707400DDE7D6 /* LandmarksApp.swift in Sources */,
 				ADC871AF2705A7D800DDE7D6 /* LandmarkList.swift in Sources */,
+				ADC871B12705ACD600DDE7D6 /* LandmarkDetail.swift in Sources */,
 				ADC871A5270572D300DDE7D6 /* CircleImage.swift in Sources */,
 				ADC871A927059FB400DDE7D6 /* Landmark.swift in Sources */,
 				ADC871AD2705A67100DDE7D6 /* LandmarkRow.swift in Sources */,
