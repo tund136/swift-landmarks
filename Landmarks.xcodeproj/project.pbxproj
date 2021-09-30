@@ -19,6 +19,7 @@
 		ADC871AD2705A67100DDE7D6 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC871AC2705A67100DDE7D6 /* LandmarkRow.swift */; };
 		ADC871AF2705A7D800DDE7D6 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC871AE2705A7D800DDE7D6 /* LandmarkList.swift */; };
 		ADC871B12705ACD600DDE7D6 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC871B02705ACD600DDE7D6 /* LandmarkDetail.swift */; };
+		ADC871B32705B59800DDE7D6 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC871B22705B59800DDE7D6 /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		ADC871AC2705A67100DDE7D6 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		ADC871AE2705A7D800DDE7D6 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		ADC871B02705ACD600DDE7D6 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		ADC871B22705B59800DDE7D6 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				ADC871A4270572D300DDE7D6 /* CircleImage.swift */,
 				ADC871A627059A4B00DDE7D6 /* MapView.swift */,
+				ADC871B22705B59800DDE7D6 /* FavoriteButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				ADC871922705707400DDE7D6 /* ContentView.swift in Sources */,
 				ADC871A727059A4B00DDE7D6 /* MapView.swift in Sources */,
 				ADC871902705707400DDE7D6 /* LandmarksApp.swift in Sources */,
+				ADC871B32705B59800DDE7D6 /* FavoriteButton.swift in Sources */,
 				ADC871AF2705A7D800DDE7D6 /* LandmarkList.swift in Sources */,
 				ADC871B12705ACD600DDE7D6 /* LandmarkDetail.swift in Sources */,
 				ADC871A5270572D300DDE7D6 /* CircleImage.swift in Sources */,
