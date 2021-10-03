@@ -26,6 +26,7 @@ struct CategoryHome: View {
                 }
                 .listRowInsets(EdgeInsets())
             }
+            .listStyle(InsetListStyle())
             .navigationTitle("Featured")
             .toolbar {
                 Button(action: { showingProfile.toggle() }) {
