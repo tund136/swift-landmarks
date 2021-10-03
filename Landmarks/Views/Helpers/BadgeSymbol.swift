@@ -9,7 +9,24 @@ import SwiftUI
 
 struct BadgeSymbol: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geometry in
+            Path { path in
+                let width = min(geometry.size.width, geometry.size.height)
+                let height = width * 0.75
+                let spacing = width * 0.03
+                let middle = width * 0.5
+                let topWidth = width * 0.226
+                let topHeight = height * 0.488
+                
+                path.addLines([
+                    CGPoint(x: middle, y: spacing),
+                    CGPoint(x: middle - topWidth, y: topHeight - spacing),
+                    CGPoint(x: middle, y: topHeight / 2 + spacing),
+                    CGPoint(x: middle + topWidth, y: topHeight - spacing),
+                    CGPoint(x: middle, y: spacing)
+                ])
+            }
+        }
     }
 }
 
