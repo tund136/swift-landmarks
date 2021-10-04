@@ -28,6 +28,9 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             navigationOrientation: .horizontal)
         pageViewController.dataSource = context.coordinator
         
+        // With the binding connected in both directions, the text view updates to show the correct page number after each swipe.
+        pageViewController.delegate = context.coordinator
+        
         return pageViewController
     }
     
