@@ -10,20 +10,30 @@ import UIKit
 
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
-
+    
     // SwiftUI calls this method a single time when it’s ready to display the view,
     // and then manages the view controller’s life cycle.
     func makeUIViewController(context: Context) -> UIPageViewController {
         let pageViewController = UIPageViewController(
             transitionStyle: .scroll,
             navigationOrientation: .horizontal)
-
+        
         return pageViewController
     }
-
+    
     // UIHostingController that hosts the page SwiftUI view on every update.
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
             [UIHostingController(rootView: pages[0])], direction: .forward, animated: true)
+    }
+    
+    // SwiftUI manages your UIViewControllerRepresentable type’s coordinator,
+    // and provides it as part of the context when calling the methods you created above.
+    class Coordinator: NSObject {
+        var parent: PageViewController
+        
+        init(_ pageViewController: PageViewController) {
+            parent = pageViewController
+        }
     }
 }
