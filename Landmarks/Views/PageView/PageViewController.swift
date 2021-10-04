@@ -10,6 +10,9 @@ import UIKit
 
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
+    // In addition to declaring the @Binding property, you also update the call to setViewControllers(_:direction:animated:),
+    // passing the value of the currentPage binding.
+    @Binding var currentPage: Int
     
     // SwiftUI calls this makeCoordinator() method before makeUIViewController(context:),
     // so that you have access to the coordinator object when configuring your view controller.
@@ -31,7 +34,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     // UIHostingController that hosts the page SwiftUI view on every update.
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
-            [context.coordinator.controllers[0]], direction: .forward, animated: true)
+            [context.coordinator.controllers[currentPage]], direction: .forward, animated: true)
     }
     
     // SwiftUI manages your UIViewControllerRepresentable type’s coordinator,
