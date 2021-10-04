@@ -11,6 +11,12 @@ import UIKit
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
     
+    // SwiftUI calls this makeCoordinator() method before makeUIViewController(context:),
+    // so that you have access to the coordinator object when configuring your view controller.
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
     // SwiftUI calls this method a single time when it’s ready to display the view,
     // and then manages the view controller’s life cycle.
     func makeUIViewController(context: Context) -> UIPageViewController {
